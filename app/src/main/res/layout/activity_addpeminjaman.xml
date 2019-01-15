@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activityAddPinjaman"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar_activity"
+        layout="@layout/tool_bar_activity" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilKdPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietKdPinjam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kode Pinjam"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spNoAnggota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilKdPinjam"/>
+
+    <TextView
+        android:id="@+id/tvTglPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Tanggal Pinjam"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:drawableRight="@drawable/ic_av_timer_black_24dp"
+        android:layout_below="@+id/spNoAnggota"/>
+
+    <TableLayout
+        android:id="@+id/tlDtlPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTglPinjam"
+        android:paddingTop="30dp">
+        <TableRow>
+            <Spinner
+                android:id="@+id/spNoLaptop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"/>
+
+            <EditText
+                android:id="@+id/etQtyPinjam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Qty"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:inputType="number"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/etKeperluan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Keperluan"
+                android:maxLines="1"
+                android:maxLength="14"
+                android:inputType="text"
+                android:layout_weight="3"/>
+
+            <ImageButton
+                android:id="@+id/ibAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tlTblDtlPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlDtlPinjam"
+        android:paddingTop="30dp">
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="No. Laptop"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/cell_shape"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/cell_shape"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Keperluan"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/cell_shape"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listDtlPeminjaman"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_below="@+id/tlTblDtlPinjam"
+        android:drawSelectorOnTop="false">
+    </ListView>
+</RelativeLayout>

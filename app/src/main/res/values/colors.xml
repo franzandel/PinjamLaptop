@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorText">#000000</color>
+
+    <!--<color name="colorPrimary">#51d8c7</color>
+    <color name="colorPrimaryDark">#51d8c7</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackground">#413e4f</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextHint">#51d8c7</color>-->
+
+    <!--<color name="colorPrimary">#56B900</color>
+    <color name="colorPrimaryDark">#289C2B</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimaryLight">#84FF19</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDivider">#2FE897</color>
+    <color name="colorBorder">#a7a4a4</color>
+    <color name="colorExtra">#fffac1</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+    <color name="flowNone">#cc0101</color>
+    <color name="flowPartial">#ff8103</color>
+    <color name="flowDone">#01cc34</color>
+
+    <color name="list_item_selected_state">#0d5353</color>
+    <color name="list_item_normal_state">#0000</color>
+</resources>

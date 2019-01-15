@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activityAddLaptop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar_activity"
+        layout="@layout/tool_bar_activity" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilNoLaptop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietNoLaptop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Laptop"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilNoLaptop">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietSatuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Satuan"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilQtyTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilSatuan">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietQtyTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Qty Total"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spKdMerek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilQtyTotal"
+        android:paddingTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spKdProcessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spKdMerek"
+        android:paddingTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spKdVGA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spKdProcessor"
+        android:paddingTop="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+    android:id="@+id/tilModel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/spKdVGA">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/tietModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model"
+        android:inputType="text"
+        android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilRAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilModel">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietRAM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RAM"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilHDD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilRAM">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietHDD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HDD"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>
